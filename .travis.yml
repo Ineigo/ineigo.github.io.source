@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - '11.14.0'
+
+# cache:
+#   directories:
+#     - "node_modules"
+
+script:
+  - echo "Hello!"
+#   - yarn build
+#   - echo my-custom-domain.ru > build/CNAME
+
+deploy:
+  provider: pages
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  committer-from-gh: true
+  skip-cleanup: true
+  keep-history: true
+  local-dir: public
+  repo: Ineigo/ineigo.github.io
+  target-branch: master
+  on:
+    branch: master
