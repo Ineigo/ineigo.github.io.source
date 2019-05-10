@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ineigo</title>
-  <style>
-      body {
-        font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #cecece;
-        min-height: 100vh;
-      }
-      h1, h2, h3, h4, h5, h6 {
-        color: #555;
-      }
-  </style>
-</head>
-<body>
-  <h2>Пока тут нет ничего, совсем ;)</h2>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ineigo</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section class="header">
+            <img src="https://avatars2.githubusercontent.com/u/10618646?s=100" alt="Ineigo Kira Avatar" />
+            <h2 class="header__title">Ineigo Kira - Portfolio</h2>
+        </section>
+
+        <section class="container">
+            <article class="container__item">
+                <h3 class="container__title"><a href="/bbgenerator">bbgenerator</a> - v0.0.2</h3>
+                <p class="container__description">
+                    Backbone-Marionette Component Generator
+                </p>
+            </article>
+            <article class="container__item">
+                <h3 class="container__title"><a href="/component-version-update">component-version-update</a> - v0.0.2</h3>
+                <p class="container__description">
+                    Обновляет версию пакета в файлах package.json, CHANGELOG.md с формированием коммита с изменениями
+                </p>
+            </article>
+        </section>
+    </body>
 </html>
